@@ -1,0 +1,69 @@
+h4 {
+  color: green;
+}
+
+p {
+  color: purple;
+}
+
+button {
+  color: peru;
+  background-color: rgb(210, 227, 172);
+}
+
+/* element selector */
+body {
+  background-color: pink;
+}
+
+/* universal selector:
+
+* {
+  color: pink;
+
+} */
+
+/*Id Selector */
+#heading1 {
+  color: rgb(255, 0, 0);
+}
+
+/* Class selector */
+.myclass {
+  color: blueviolet;
+}
+
+#box {
+  color: red;
+  background-color: yellow;
+}
+
+.class1 {
+  color: blue;
+
+  /* adding bolder or lighter content */
+  font-weight: bolder;
+}
+
+/* to set the alinement */
+#par1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+
+  /* for adding color for underline */
+  text-decoration-color: brown;
+}
+
+/* if we don't want underline for anchor tag */
+a {
+  text-decoration: none;
+}
+
+#par2 {
+  font-family: cursive;
+  text-transform: capitalize;
+}
