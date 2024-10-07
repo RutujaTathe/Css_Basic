@@ -36,6 +36,9 @@ body {
 #box {
   color: red;
   background-color: yellow;
+
+  /* take only required space*/
+  display: inline;
 }
 
 .class1 {
@@ -59,11 +62,116 @@ h3 {
 }
 
 /* if we don't want underline for anchor tag */
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 #par2 {
   font-family: cursive;
   text-transform: capitalize;
+}
+
+#outer {
+  /*used for setting the text size */
+  font-size: 25px;
+}
+#inner {
+  font-size: 20px;
+
+  /*give the height -vertical area*/
+  height: 100px;
+
+  /*for setting width*/
+  width: 200px;
+  background-color: yellow;
+
+  /*setting border style and color*/
+  /* border-style: dotted;
+  border-color: red; 
+  */
+  border: 2px dotted red;
+  /* for round border  //for circle border-radius: 50px*/
+  border-radius: 15px;
+
+  /* for setting space at left,right,top,bottom */
+  /* padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; */
+
+  /*     top ! right ! bottom ! left*/
+  padding: 50px 50px 50px 50px;
+  margin: 25px 25px 25px 25px;
+}
+.traffic {
+  width: 30px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.c-red {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+
+  /* RGBA(red,green,blue,alpha(to set the darker and lighter shade)*/
+  background-color: rgba(255, 0, 0, 0.75);
+}
+.c-orange {
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.c-green {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: green;
+}
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+#navbar {
+  height: 60px;
+  background-color: #0f1111;
+}
+#search {
+  background-color: #f08804;
+}
+#logo {
+  color: #f08804;
+  font-size: 25px;
+}
+a {
+  color: white;
+  margin-right: 150px;
+}
+.contentbox {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}
+#content {
+  height: 500px;
+}
+footer {
+  background-color: #0f1111;
+  color: white;
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.box2 {
+  height: 100px;
+  /* child div consider 10% width of parent's width*/
+  width: 40%;
+  background-color: yellow;
 }
