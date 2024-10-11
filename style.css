@@ -1,3 +1,32 @@
+.mediaquery {
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+}
+/*Used to set the other background colour at particular point*/
+@media (width: 600px) {
+  div {
+    background-color: red;
+  }
+}
+/*we have set the min-width dimension*/
+@media (min-width: 600px) {
+  div {
+    background-color: greenyellow;
+  }
+}
+/* for setting max-width dimension*/
+@media (max-width: 600px) {
+  div {
+    background-color: pink;
+  }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+  div {
+    background-color: black;
+  }
+}
+
 h4 {
   color: green;
 }
@@ -352,6 +381,7 @@ ul {
   display: flex;
   /*align item center across x-axis*/
   justify-content: center;
+
   /* align items at center along y-axis*/
   align-items: center;
 }
