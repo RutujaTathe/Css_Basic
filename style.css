@@ -1,32 +1,120 @@
 .mediaquery {
-  height: 50px;
-  width: 50px;
-  background-color: pink;
+  height: 100px;
+  width: 100px;
+  /* transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s; */
+
+  /* for setting all transition property in one */
+  transition: all 2s ease-in 1s;
+  position: relative;
+  left: 100px;
+  background-color: grey;
 }
-/*Used to set the other background colour at particular point*/
-@media (width: 600px) {
-  div {
-    background-color: red;
+.loader {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid yellow;
+  border-left: 10px solid red;
+  background-color: white;
+
+  animation: loderanimate 2s steps(5) 0s infinite alternate;
+}
+@keyframes loderanimate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
+/*pseudo class used to perform specific transition to certain html elements **/
+.mediaquery:hover {
+  background-color: black;
+  font-size: 30px;
+  color: #ffffff;
+
+  /*transform: for applying 2d and 3d transition*/
+  transform: rotate(180deg);
+  transform: scale(0.5);
+  /* for movement purpose */
+  transform: translate();
+  /*for binding the transation or tilt an element along x and y axis*/
+  transform: skew(30deg);
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  position: relative;
+  /* used to use animation in our file */
+  /* animation-name: colourAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+  animation-direction: normal; alternate--left to right and right to left */
+
+  animation: colourAnimate 4s ease-in 1s infinite alternate;
+}
+
+/*keyframe-template colourAnimate-animation name*/
+/* @keyframes colourAnimate {
+  from {
+    background-color: aquamarine;
+    left: 0px;
+  }
+  to {
+    background-color: red;
+    left: 200px;
+  }
+} */
+
+/* % in animation */
+@keyframes colourAnimate {
+  0% {
+    background-color: aquamarine;
+    left: 0px;
+  }
+  50% {
+    background-color: red;
+    left: 200px;
+  }
+  100% {
+    background-color: black;
+    left: auto;
+  }
+}
+/*For applying animation in webpages we need to use animation property in it*/
+
+/*Used to set the other background colour at particular point*/
 /*we have set the min-width dimension*/
+
 @media (min-width: 600px) {
   div {
-    background-color: greenyellow;
+    background-color: blue;
   }
 }
+
 /* for setting max-width dimension*/
-@media (max-width: 600px) {
+@media (max-width: 300px) {
+  div {
+    background-color: green;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
   div {
     background-color: pink;
   }
 }
-@media (min-width: 200px) and (max-width: 300px) {
+@media (min-width: 400px) and (max-width: 600px) {
   div {
-    background-color: black;
+    background-color: red;
   }
 }
-
 h4 {
   color: green;
 }
